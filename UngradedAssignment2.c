@@ -1,6 +1,29 @@
 #include <stdio.h>
 
 void
+Checkexp()
+{
+	int Low, High, Check;
+	Check = 0;
+	for (int x = -500; x <= 500; x++)
+		{
+			for (int y = -500; y <=500; y++) 
+			{
+				for (int z = -500; z <=500; z++)
+				{
+					if ((2 * x) - (3 * y) >= (5*z))  
+						Check++;
+					 
+				}
+			}
+		}
+	printf("%d", Check);
+}
+
+
+
+
+void
 display (char c, int nCount)
 {
  /* provide your variable declaration and code */
@@ -24,15 +47,17 @@ for (nLine = 1; )
 displayNumbers( );
 display( );
 displayNumbers( );
-printf(“\n”);
+printf(â€œ\nâ€);
 /* provide other necessary code here */
 }
 }
 int
 main()
-{ int n;
-printf(“Enter n: ”);
-scanf(“%d”, &n);
+{ 
+Checkexp();
+int n;
+printf(â€œEnter n: â€);
+scanf(â€œ%dâ€, &n);
 displayPattern(n);
 return 0;
 }
