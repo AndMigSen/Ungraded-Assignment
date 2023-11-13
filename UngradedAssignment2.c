@@ -139,14 +139,17 @@ Checkexp()
 	int Low, High, Check;
 	Check = 0;
 	for (int x = -500; x <= 500; x++)
+		/*Checks through x values from -500 to 500 */
 		{
 			for (int y = -500; y <=500; y++) 
 			{
+			/*Checks through y values from -500 to 500 */
 				for (int z = -500; z <=500; z++)
 				{
+				/*Checks through z values from -500 to 500 */
 					if ((2 * x) - (3 * y) >= (5*z))  
 						Check++;
-					 
+					/*Checks if condition is met then increments check */
 				}
 			}
 		}
@@ -156,9 +159,20 @@ Checkexp()
 
 
 
-void display (char c, int nCount)
+void display (int base, int n)
 {
- /* provide your variable declaration and code */
+	printf("Enter the base value: ");
+	scanf("%d", &base);
+	/*Asks for base value input */
+    
+    	printf("Enter the number of increments: ");
+    	scanf("%d", &n);
+	/*Asks for increment amount of times input */
+ 	printf("%d", base);
+	for (int i = 1; i <= n-1; ++i) {
+        	base += 1;
+        	printf("%d", base);
+	/*Increments value then prints*/
 }
 
 /* This function should display nCount digits starting from *pNum (i.e., if
@@ -187,6 +201,7 @@ nDigits = 0;
 int main()
 { 
 int nOption, nExpoVal, nBasVal;
+int base, n;
 	nOption = 0;
 	nExpoVal = 0;
 	nBasVal = 0;
@@ -209,7 +224,7 @@ switch(nOption)
 	break; 
 	case 2: Checkexp();
 	break;
-	case 3:
+	case 3:  display(base, n);
 	break;
 }
 }while(nOption != 4);
