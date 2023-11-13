@@ -159,20 +159,9 @@ Checkexp()
 
 
 
-void display (int base, int n)
+void display (char c, int nCount)
 {
-	printf("Enter the base value: ");
-	scanf("%d", &base);
-	/*Asks for base value input */
-    
-    	printf("Enter the number of increments: ");
-    	scanf("%d", &n);
-	/*Asks for increment amount of times input */
- 	printf("%d", base);
-	for (int i = 1; i <= n-1; ++i) {
-        	base += 1;
-        	printf("%d", base);
-	/*Increments value then prints*/
+	
 }
 
 /* This function should display nCount digits starting from *pNum (i.e., if
@@ -224,7 +213,7 @@ switch(nOption)
 	break; 
 	case 2: Checkexp();
 	break;
-	case 3:  display(base, n);
+	case 3: 
 	break;
 }
 }while(nOption != 4);
