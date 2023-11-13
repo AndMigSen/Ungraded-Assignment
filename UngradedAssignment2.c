@@ -158,10 +158,15 @@ Checkexp()
 
 
 
-
+/* This function should display the character stored in variable c, nCount 
+number of times */
 void display (char c, int nCount)
 {
-	
+	for (int i = 0; i <= nCount; ++i) 
+	{
+        printf("%c", c);
+	}
+    printf("\n");
 }
 
 /* This function should display nCount digits starting from *pNum (i.e., if
@@ -169,6 +174,10 @@ void display (char c, int nCount)
 will be 7 before the end of the function. */
 void displayNumbers (int *pNum, int nCount)
 {
+ printf("%d", pNum);
+for (int i = 1; i <= nCount-1; ++i) {
+        	pNum += 1;
+        	printf("%d", pNum);
  /* provide your variable declaration and code */
 }
 
