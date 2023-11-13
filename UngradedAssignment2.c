@@ -31,7 +31,10 @@ float functionCall1(int nValueOfX, int nBase)
 		nSubContainer1 /= nFactorialContainer1;
 		nAddContainer1 -= nSubContainer1;
 	}
-		
+	
+	if(nValueOfX != 1 && nValueOfX != 0 && nValueOfX != 2) 
+	{
+	
 	printf("firstpass: %.2f\n", nAddContainer1);
 	//the meat of the code idk how i made it work but it works :')))
 	do
@@ -119,7 +122,11 @@ float functionCall1(int nValueOfX, int nBase)
 		nAddContainer1 -= fEverythingContainer;
 	printf("nAddContainer1: %f\n", nAddContainer1);
 	}
-
+}
+	if(nValueOfX == 0)
+	{
+		nAddContainer1 = 1;
+	}
 	printf("nExponent: %d", nExponent);
 	printf("\n\nRESULT: %.2f\n", nAddContainer1);
 	//returns it since it is a float thing afterall
