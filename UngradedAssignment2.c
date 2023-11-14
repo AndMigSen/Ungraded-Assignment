@@ -162,11 +162,12 @@ Checkexp()
 number of times */
 void display (char c, int nCount)
 {
+	char c = '*';
 	for (int i = 0; i <= nCount; ++i) 
 	{
         printf("%c", c);
 	}
-    printf("\n");
+    	printf("\n");
 }
 
 /* This function should display nCount digits starting from *pNum (i.e., if
