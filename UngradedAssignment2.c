@@ -175,9 +175,11 @@ will be 7 before the end of the function. */
 void displayNumbers (int *pNum, int nCount)
 {
  printf("%d", pNum);
-for (int i = 1; i <= nCount-1; ++i) {
+for (int i = 1; i <= nCount-1; ++i) 
+	{
         	pNum += 1;
         	printf("%d", pNum);
+	}
  /* provide your variable declaration and code */
 }
 
